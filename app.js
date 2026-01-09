@@ -1,13 +1,49 @@
-//6章
-//マウスクリック
+//7章
 $(function(){
-  $('.box1').on('click', function(){
-    $('.box1').addClass('box1-ext');
-  });
-  $('.box1').mouseout(function(){
-    $('.box1').removeClass('box1-ext');
+  $('button').on('click', function(){
+    $('ul').children().css('color','red');
   });
 });
+
+ //thisを使用した場合(this不使用の場合と同じ動作)
+// $(function(){
+//   $('.box1').on('click', function(){
+//     $(this).slideUp();
+//   });
+// });
+
+ //this不使用の場合(thisを使用した場合と同じ動作)
+// $(function(){
+//   $('.bg1').on('click', function(){
+//     $('.bg1').slideUp();
+//   });
+//   $('.bg2').on('click', function(){
+//     $('.bg2').slideUp();
+//   });
+//   $('.bg3').on('click', function(){
+//     $('.bg3').slideUp();
+//   });
+//   $('.bg4').on('click', function(){
+//     $('.bg4').slideUp();
+//   });
+// });
+
+
+
+
+
+
+
+//6章
+//マウスクリック
+// $(function(){
+//   $('.box1').on('click', function(){
+//     $('.box1').addClass('box1-ext');
+//   });
+//   $('.box1').mouseout(function(){
+//     $('.box1').removeClass('box1-ext');
+//   });
+// });
 
 
 
